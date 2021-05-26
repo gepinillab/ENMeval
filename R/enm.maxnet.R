@@ -38,7 +38,7 @@ maxnet.args <- function(occs.z, bg.z, tune.tbl.i, other.settings) {
   out$regmult <- tune.tbl.i$rm
   # some models fail to converge if this parameter is not set to TRUE
   # usually the case with sparse datasets
-  out$addsamplestobackground <- TRUE
+  out$addsamplestobackground <- FALSE
   out <- c(out, other.settings$other.args)
   return(out)
 }
